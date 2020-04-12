@@ -6,9 +6,9 @@
   <title>Mairala</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <link rel="stylesheet" href="css/app.min.css">
-  <!-- <link rel="stylesheet" href="lib/bootstrap-grid.css"> -->
+  <link rel="stylesheet" href="lib/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="../fonts/font-awesome-4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="fonts/font-awesome-4.0.3/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -16,8 +16,8 @@
     <header class="header">
       <nav class="header__head">
         <div class="container">
-          <div class="header-row">
-            <div class="logo">Mairala</div>
+          <div class="row no-gutters justify-content-between">
+            <div class="header__logo">Mairala</div>
             <div class="hamburger-menu">
               <input id="menu__toggle" type="checkbox" />
               <label class="menu__btn" for="menu__toggle">
@@ -49,22 +49,26 @@
         imperdiet doming id quod mazim</div>
     </section>
     <section class="we">
-      <div class="we__row">
-        <div class="we__text">
-          <div class="we__title">We Are the best</div>
-          <div class="we__subttile">
-            <p>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat</p>
-            <p>Volutpat wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-              aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-              molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
-              dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam
-              liber tempor cum</p>
+      <div class="row">
+        <div class="col col-md-6">
+          <div class="we__text">
+            <div class="we__title">We Are the best</div>
+            <div class="we__subttile">
+              <p>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                erat</p>
+              <p>Volutpat wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+                dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam
+                liber tempor cum</p>
+            </div>
+            <div class="we__button button-white">Read more<i class="fa fa-long-arrow-right" aria-hidden="true"></i></div>
           </div>
-          <div class="we__button button-white">Read more<i class="fa fa-long-arrow-right" aria-hidden="true"></i></div>
         </div>
-        <div class="we__img"></div>
-      </div>
+        <div class="col col-md-6 d-md-block d-none">
+          <img class="we__img" src="img/team.png">
+          </img>
+        </div>
     </section>
     <section class="services">
       <div class="services__header">
@@ -75,24 +79,30 @@
           odio dignissim qui blandit praesent</div>
       </div>
       <div class="container">
-        <div class="services__row">
-          <div class="services-item">
-            <div class="services-item__logo"><i class="fa fa-users" aria-hidden="true"></i></div>
-            <div class="services-item__title">ConsulTancy</div>
-            <div class="services-item__text">Claritas est etiam processus dynaicus qui sequitur mutationem consuetudium
-              lectorum. Mirum est notare quam</div>
+        <div class="row no-gutters">
+          <div class="col col-md-4">
+            <div class="services-item">
+              <div class="services-item__logo"><i class="fa fa-users" aria-hidden="true"></i></div>
+              <div class="services-item__title">ConsulTancy</div>
+              <div class="services-item__text">Claritas est etiam processus dynaicus qui sequitur mutationem consuetudium
+                lectorum. Mirum est notare quam</div>
+            </div>
           </div>
-          <div class="services-item">
-            <div class="services-item__logo"><i class="fa fa-bullhorn" aria-hidden="true"></i></div>
-            <div class="services-item__title">Maketing</div>
-            <div class="services-item__text">Claritas est etiam processus dynaicus qui sequitur mutationem consuetudium
-              lectorum. Mirum est notare quam</div>
+          <div class="col col-md-4">
+            <div class="services-item">
+              <div class="services-item__logo"><i class="fa fa-bullhorn" aria-hidden="true"></i></div>
+              <div class="services-item__title">Maketing</div>
+              <div class="services-item__text">Claritas est etiam processus dynaicus qui sequitur mutationem consuetudium
+                lectorum. Mirum est notare quam</div>
+            </div>
           </div>
-          <div class="services-item">
-            <div class="services-item__logo"><i class="fa fa-desktop" aria-hidden="true"></i></div>
-            <div class="services-item__title">Reaserch</div>
-            <div class="services-item__text">Claritas est etiam processus dynaicus qui sequitur mutationem consuetudium
-              lectorum. Mirum est notare quam</div>
+          <div class="col col-md-4">
+            <div class="services-item">
+              <div class="services-item__logo"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+              <div class="services-item__title">Reaserch</div>
+              <div class="services-item__text">Claritas est etiam processus dynaicus qui sequitur mutationem consuetudium
+                lectorum. Mirum est notare quam</div>
+            </div>
           </div>
         </div>
       </div>
@@ -100,7 +110,7 @@
     <section class="skills">
       <div class="container">
         <div class="skills__title">Our Skills</div>
-        <div class="skills__row">
+        <div class="row no-gutters skills__row">
           <div class="skills__column">
             <div class="item-skills">
               <div class="item-skills__circle"><span>85%</span></div>
@@ -140,9 +150,9 @@
         congue nihil imperdiet doming id quod mazim </div>
     </section>
     <section class="gallery">
-      <div class="gallery__row">
-        <div class="gallery__item">
-          <div class="gallery__img" style="background: url('../img/gallery/01.png') center / cover no-repeat">
+      <div class="row no-gutters">
+        <div class="col-sm col-md-6 col-xl-3 gallery__item">
+          <div class="gallery__img" style="background: url('img/gallery/01.png') center / cover no-repeat">
             <div class="gallery__text">
               <div class="gallery__title">PaperClips</div>
               <div class="gallery__subtitle">Branding</div>
@@ -150,24 +160,24 @@
           </div>
 
         </div>
-        <div class="gallery__item">
-          <div class="gallery__img" style="background: url('../img/gallery/02.png') center / cover no-repeat">
+        <div class="col-sm col-md-6 col-xl-3 gallery__item">
+          <div class="gallery__img" style="background: url('img/gallery/02.png') center / cover no-repeat">
             <div class="gallery__text">
               <div class="gallery__title">PaperClips</div>
               <div class="gallery__subtitle">Branding</div>
             </div>
           </div>
         </div>
-        <div class="gallery__item">
-          <div class="gallery__img" style="background: url('../img/gallery/03.png') center / cover no-repeat">
+        <div class="col-sm col-md-6 col-xl-3 gallery__item">
+          <div class="gallery__img" style="background: url('img/gallery/03.png') center / cover no-repeat">
             <div class="gallery__text">
               <div class="gallery__title">PaperClips</div>
               <div class="gallery__subtitle">Branding</div>
             </div>
           </div>
         </div>
-        <div class="gallery__item">
-          <div class="gallery__img" style="background: url('../img/gallery/04.png') center / cover no-repeat">
+        <div class="col-sm col-md-6 col-xl-3 gallery__item">
+          <div class="gallery__img" style="background: url('img/gallery/04.png') center / cover no-repeat">
             <div class="gallery__text">
               <div class="gallery__title">PaperClips</div>
               <div class="gallery__subtitle">Branding</div>
@@ -184,33 +194,33 @@
       </div>
     </section>
     <section class="gallery">
-      <div class="gallery__row">
-        <div class="gallery__item">
-          <div class="gallery__img" style="background: url('../img/gallery/03.png') center / cover no-repeat">
+      <div class="row no-gutters">
+        <div class="col-sm col-md-6 col-xl-3 gallery__item">
+          <div class="gallery__img" style="background: url('img/gallery/03.png') center / cover no-repeat">
             <div class="gallery__text">
               <div class="gallery__title">PaperClips</div>
               <div class="gallery__subtitle">Branding</div>
             </div>
           </div>
         </div>
-        <div class="gallery__item">
-          <div class="gallery__img" style="background: url('../img/gallery/01.png') center / cover no-repeat">
+        <div class="col-sm col-md-6 col-xl-3 gallery__item">
+          <div class="gallery__img" style="background: url('img/gallery/01.png') center / cover no-repeat">
             <div class="gallery__text">
               <div class="gallery__title">PaperClips</div>
               <div class="gallery__subtitle">Branding</div>
             </div>
           </div>
         </div>
-        <div class="gallery__item">
-          <div class="gallery__img" style="background: url('../img/gallery/04.png') center / cover no-repeat">
+        <div class="col-sm col-md-6 col-xl-3 gallery__item">
+          <div class="gallery__img" style="background: url('img/gallery/04.png') center / cover no-repeat">
             <div class="gallery__text">
               <div class="gallery__title">PaperClips</div>
               <div class="gallery__subtitle">Branding</div>
             </div>
           </div>
         </div>
-        <div class="gallery__item">
-          <div class="gallery__img" style="background: url('../img/gallery/02.png') center / cover no-repeat">
+        <div class="col-sm col-md-6 col-xl-3 gallery__item">
+          <div class="gallery__img" style="background: url('img/gallery/02.png') center / cover no-repeat">
             <div class="gallery__text">
               <div class="gallery__title">PaperClips</div>
               <div class="gallery__subtitle">Branding</div>
@@ -229,10 +239,10 @@
           <div class="s-white__subtitle">Nam liber tempor cum soluta nobis eleifend option congue nihil
             imperdiet doming id quod mazim</div>
         </div>
-        <div class="team__row">
-          <div class="team__column">
-            <div class="team__item">
-              <div class="team__img" style="background: url('../img/team_2.png') center / cover no-repeat">
+        <div class="row no-gutters team__row">
+          <div class="col col-md-6 col-xl-4">
+            <div class="team__column team__item">
+              <div class="team__img" style="background: url('img/team_2.png') center / cover no-repeat">
                 <div class="team__hover">
                   <i class="fa fa-twitter" aria-hidden="true"></i>
                   <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -245,9 +255,9 @@
               </div>
             </div>
           </div>
-          <div class="team__column">
-            <div class="team__item">
-              <div class="team__img" style="background: url('../img/team_2.png') center / cover no-repeat">
+          <div class="col col-md-6 col-xl-4">
+            <div class="team__item team__column">
+              <div class="team__img" style="background: url('img/team_2.png') center / cover no-repeat">
                 <div class="team__hover">
                   <i class="fa fa-twitter" aria-hidden="true"></i>
                   <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -260,9 +270,9 @@
               </div>
             </div>
           </div>
-          <div class="team__column">
-            <div class="team__item">
-              <div class="team__img" style="background: url('../img/team_2.png') center / cover no-repeat">
+          <div class="col col-md-6 col-xl-4">
+            <div class="team__item team__column">
+              <div class="team__img" style="background: url('img/team_2.png') center / cover no-repeat">
                 <div class="team__hover">
                   <i class="fa fa-twitter" aria-hidden="true"></i>
                   <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -322,13 +332,28 @@
       </div>
       <div class="container">
         <div class="item-blog">
-          <div class="item-blog__row">
-            <div class="item-blog__columns">
-              <div class="item-blog__img">
-                <img src="img/blog.png" alt="blog">
+          <div class="row no-gutters">
+            <div class="item-blog__row">
+              <div class="col-xs col-md-6 item-blog__columns">
+                <div class="item-blog__img">
+                  <img src="img/blog.png" alt="blog">
+                </div>
+              </div>
+              <div class="col-xs col-md-6 item-blog__columns">
+                <div class="item-blog__body">
+                  <div class="item-blog__day">10 April 2014</div>
+                  <div class="item-blog__title">Typi non habent claritatem insitam</div>
+                  <div class="item-blog__text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                    esse molestie consequat, vel illum dolore eu feugiat nulla
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui [...]</div>
+                </div>
               </div>
             </div>
-            <div class="item-blog__columns">
+          </div>
+        </div>
+        <div class="item-blog">
+          <div class="item-blog__row">
+            <div class="col-xs col-md-6 item-blog__columns">
               <div class="item-blog__body">
                 <div class="item-blog__day">10 April 2014</div>
                 <div class="item-blog__title">Typi non habent claritatem insitam</div>
@@ -337,20 +362,7 @@
                   facilisis at vero eros et accumsan et iusto odio dignissim qui [...]</div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="item-blog">
-          <div class="item-blog__row">
-            <div class="item-blog__columns">
-              <div class="item-blog__body">
-                <div class="item-blog__day">10 April 2014</div>
-                <div class="item-blog__title">Typi non habent claritatem insitam</div>
-                <div class="item-blog__text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit
-                  esse molestie consequat, vel illum dolore eu feugiat nulla
-                  facilisis at vero eros et accumsan et iusto odio dignissim qui [...]</div>
-              </div>
-            </div>
-            <div class="item-blog__columns">
+            <div class="col-xs col-md-6 item-blog__columns">
               <div class="item-blog__img">
                 <img src="img/blog.png" alt="blog">
               </div>
@@ -359,12 +371,12 @@
         </div>
         <div class="item-blog">
           <div class="item-blog__row">
-            <div class="item-blog__columns">
+            <div class="col-xs col-md-6 item-blog__columns">
               <div class="item-blog__img">
                 <img src="img/blog.png" alt="blog">
               </div>
             </div>
-            <div class="item-blog__columns">
+            <div class="col-xs col-md-6 item-blog__columns">
               <div class="item-blog__body">
                 <div class="item-blog__day">10 April 2014</div>
                 <div class="item-blog__title">Typi non habent claritatem insitam</div>
@@ -384,15 +396,15 @@
         <form class="contact__form" action="#">
           <input type="text" class="contact__input" placeholder="Name*">
           <input type="email" class="contact__input" placeholder="Email*">
-          <input class="contact__textarea" placeholder="Message..."></input>
+          <textarea class="contact__textarea" placeholder="Message..."></textarea>
           <button class="contact__button">Submit</button>
         </form>
       </div>
     </section>
     <footer class="footer">
       <div class="container">
-        <div class="footer__row">
-          <div class="footer__col">
+        <div class="row justify-content-center footer__row">
+          <div class="col-xs col-md-6 col-lg-3 footer__col">
             <div class="item-footer">
               <div class="item-footer__logo">Mairala</div>
               <div class="item-footer__text">
@@ -402,7 +414,7 @@
               </p>
             </div>
           </div>
-          <div class="footer__col">
+          <div class="col-xs col-md-6 col-lg-3 footer__col">
             <div class="item-footer">
               <div class="item-footer__title">Recent Posts</div>
               <div class="item-footer__post">
@@ -419,7 +431,7 @@
               </div>
             </div>
           </div>
-          <div class="footer__col">
+          <div class="col-xs col-md-6 col-lg-3 footer__col">
             <div class="item-footer">
               <div class="item-footer__title">Twiter Feeds</div>
               <div class="item-footer__post">
@@ -436,7 +448,7 @@
               </div>
             </div>
           </div>
-          <div class="footer__col">
+          <div class="col-xs col-md-6 col-lg-3 footer__col">
             <div class="item-footer">
               <div class="item-footer__title">Our Address</div>
               <div class="item-footer__text">
