@@ -25,13 +25,16 @@
     height: 100%
     background-color: #000000
     opacity: 0.8
-  &__logo
-    font-family: "Oleo Script"
-    font-size: 48px
-    padding: 30px 0px
-    @media ( max-width: 768px)
-      font-size: 37px
-      padding: 10px 0px
+  &-row
+    display: flex
+    justify-content: space-between
+    .logo
+      font-family: "Oleo Script"
+      font-size: 48px
+      padding: 30px 0px
+      @media ( max-width: 768px)
+        font-size: 37px
+        padding: 10px 0px
   &__head
     background-color: #303030
     height: 95px
@@ -225,11 +228,18 @@
 
 .we
   background-color: #f5f5f5
+  &__row
+    display: flex
+    flex-wrap: wrap
   &__text
+    flex: 0 1 50%
     max-width: 600px
     padding: 0px 15px
     margin: 0px 0px 0px auto
     font-family: Raleway
+    @media ( max-width: 768px )
+      flex: 0 1 100%
+      max-width: 100%
   &__title
     color: #7b6c63
     font-size: 24px
@@ -249,8 +259,10 @@
     .fa-long-arrow-right
       margin-left: 5px
   &__img
+    flex: 0 1 50%
+    background: url('../img/team.png') center / cover no-repeat
     @media ( max-width: 768px )
-      display: none
+      flex: 0 0 100%
 .button-white
   display: inline-block
   color: #000000
@@ -289,12 +301,17 @@
     margin: 0px 0px 4.6% 0px
     padding: 0px 15px
   &__row
+    display: flex
+    flex-wrap: wrap
     margin: 0px -15px
 
 .services-item
+  flex: 0 1 33.333%
   padding: 0px 15px
   text-align: center
   font-family: Raleway
+  @media ( max-width: 768px )
+    flex: 0 1 100%
   &__logo
     color: #7b6c63
     font-size: 30px
@@ -336,7 +353,10 @@
     margin: 0px 0px 3.33% 0px
 
   &__row
+    position: relative
+    display: flex
     justify-content: center
+    flex-wrap: wrap
     margin: 0px -3.2%
   &__column
     flex: 0 1 20%
@@ -380,7 +400,15 @@
     margin: 19% 0px 19% 0px
 
 .gallery
+  &__row
+    display: flex
+    flex-wrap: wrap
   &__item
+    flex: 0 1 25%
+    @media ( max-width: 1500px )
+      flex: 0 1 50%
+    @media ( max-width: 768px )
+      flex: 0 1 100%
     &:hover
       .gallery__text
         visibility: visible
@@ -467,11 +495,18 @@
   background-color: #f5f5f5
   padding: 0px 0px 2% 0px
   &__row
+    display: flex
+    flex-wrap: wrap
     justify-content: center
     margin: 0px -15px
   &__column
+    flex: 0 0 33.333%
     padding: 0px 15px
     margin: 0px 0px 5% 0px
+    @media ( max-width: 1300px )
+      flex: 0 1 50%
+    @media ( max-width: 768px )
+      flex: 0 1 100%
   &__item
     &:hover
       .team__hover
@@ -666,8 +701,6 @@
     @media ( max-width: 768px )
       width: 66%
   &__textarea
-    display: inline-block
-    padding: 15px 0px 0px 0px
     width: 66%
     height: 150px
     border-top: 4px solid #000
@@ -698,10 +731,18 @@
   padding: 3% 0px 0px 0px
   background-color: #222222
   &__row
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
     margin: 0px -15px
   &__col
+    flex: 0 1 25%
     padding: 0px 15px
     margin: 0px 0px 15px 0px
+    @media ( max-width: 1024px )
+      flex: 0 1 50%
+    @media ( max-width: 768px )
+      flex: 0 1 100%
   &__copiright
     text-align: center
     color: #595959
