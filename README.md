@@ -1,1 +1,1 @@
-https://mrgo336.github.io/Mairala/
+https://EgorNikolaiev.github.io/Mairala/
